@@ -1,38 +1,81 @@
-.App {
+.App h1{
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+h2{
+  text-align: center;
+  margin: 0;
+  background-color: #fff;
+  padding: 10px;
+}
+.BotCollection h2{
+  background-color: #fff;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bot-collection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 150px 5px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.bot-card {
+  flex: 1;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px 10px;
+  text-align: center;
+  box-shadow: 2px 2px 4px #888;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bot-card.enlisted {
+  background-color: skyblue;
+}
+
+.bot-card img {
+  width: 100px;
+}
+
+.bot-card h2 {
+  margin-top: 10px;
+}
+
+
+
+.bot-card p {
+  margin: 0;
+}
+
+.bot-card {
+  margin-right: 5px;
+}
+
+.bot-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.BotCollectionList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.BotCollectionList li {
+  flex: 0 0 calc(33.33% - 20px); 
+  margin-bottom: 20px;
 }
